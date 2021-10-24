@@ -16,6 +16,7 @@ class User extends Model
 
     public $timestamps = false;
 
+    protected $table = "users";
 
     public function posts()
         {
@@ -25,3 +26,4 @@ class User extends Model
 
 
 }
+

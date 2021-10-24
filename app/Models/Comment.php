@@ -13,6 +13,8 @@ class Comment extends Model
     protected $guarded =[];
     public $timestamps = false;
 
+    protected $table = "comments";
+
     public function post(){
 
         return $this->belongsTo(Post::class);

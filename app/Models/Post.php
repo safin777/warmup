@@ -14,6 +14,8 @@ class Post extends Model
     protected $guarded =[];
 
     public $timestamps =false;
+    protected $table = "posts";
+
 
     public function user(){
 

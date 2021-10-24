@@ -15,9 +15,10 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('userId');
+            $table->integer('userId')->foreign('userId')->references('id')->on('users');
             $table->text('title');
             $table->longText('body');
+
         });
     }
 
@@ -31,3 +32,4 @@ class CreatePostsTable extends Migration
         Schema::dropIfExists('posts');
     }
 }
+

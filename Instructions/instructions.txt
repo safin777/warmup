@@ -1,45 +1,42 @@
-Posts: https://jsonplaceholder.typicode.com/posts
-Users: https://jsonplaceholder.typicode.com/users
-Comments: https://jsonplaceholder.typicode.com/comments
 
-Relation you should create: User -> Post -> Comment
 
-Task: Make a very simple Laravel application which will have a button to import data from above APIs and a button to clean the DB again. Make a seeder to create an admin account which will run with import data. We want to see Users, Posts. In user details, we want to see that users post. In Post details, we want to see it's comments.
+//comment
 
-Use eloquent relationships and Laravel auth. Import button can be clicked without auth. Rest of the features should be protected by auth.
+
+//posts
 
 
 
-
-<div class="table-responsive">
-            <table class="table table-success table-striped table-hover ">
-                <thead>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>User Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Comapny</th>
-                    <th>Website</th>
-                    <th>Action</th>
-
-                </thead>
+//users
 
 
-                    @foreach ($users as $user)
-                    <tbody>
-                      <td>{{$user->id}}</td>
-                      <td>{{$user->name}}</td>
-                      <td>{{$user->username}}</td>
-                      <td>{{$user->email}}</td>
-                      <td>{{$user->phone}}</td>
-                      <td>{{$user->company_name}}</td>
-                      <td><a href="{{$user->website}}">{{$user->website}}</a></td>
-                      <td class="text-right">
-                        <a href="#" class="btn btn-sm btn-success">Details and Edit</a>
-                        <a href="#" class="btn btn-sm btn-danger" onclick= "return confirm('Are you sure to delete?')"></i>Delete</a>
-                     </td>
-                    </tbody>
-                    @endforeach
-            </table>
-        </div>
+
+
+
+
+//table)))))))))))))))))))))))))))))))))))user
+
+
+
+
+
+
+}}}}}}}}}}}}}COmments}}}}}}}}}}}}}}}}}}}}
+
+
+
+
+
+}}}}}}}}}}}}}}}}}}}}}}posts}}}}}}}}}}}}}}}}}
+
+
+
+
+\\\\\\\\\\\\\\\\admins
+
+
+
+
+
+
+
