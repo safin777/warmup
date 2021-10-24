@@ -37,11 +37,21 @@ class AdminController extends Controller
 
         $userDetails = User::find($userId);
 
-        $userPost = Post::find($userId);
-        dd($userPost);
+        $userPosts = $userDetails->posts;
 
-        return view ('Admin.user_details',['userDetails'=>$userDetails , 'userPost'=>$userPost]);
 
+        return view ('Admin.user_details',['userDetails'=>$userDetails , 'userPosts'=>$userPosts]);
+
+
+   }
+
+   public function post_details($id)
+   {
+       $post = Post::findOrFail($id);
+
+       $postComments = $post->comments;
+
+       dd($post, $postComments);
 
    }
 

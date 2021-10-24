@@ -31,6 +31,7 @@ Route::post('admin/login',[AdminAuthController::class, 'check_login']);
 Route::get('/dashboard',[AdminController::class,'view_dashboard']);
 Route::get('/userlist',[AdminController::class,'viewUserList']);
 Route::get('user/details/{id}',[AdminController::class,'user_details']);
+Route::get('posts/{id}',[AdminController::class,'post_details'])->name('post.details');
 
 Route::get('/postslist',[AdminController::class,'posts_list']);
 

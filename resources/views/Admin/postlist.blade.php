@@ -10,7 +10,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>user ID</th>
+                            <th>User name</th>
                             <th>Title</th>
                             <th>Details</th>
                             <th>Action</th>
@@ -22,8 +22,8 @@
                     <tbody>
                     @foreach ($posts as $post)
                         <tr>
-                            <td>{{$post->id}}</td>
-                            <td>{{$post->userId}}</td>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{$post->user->name}}</td>
                             <td style="color: greenyellow">{{$post->title}}</td>
                             <td>{{$post->body}}</td>
                             <td class="text-right">
