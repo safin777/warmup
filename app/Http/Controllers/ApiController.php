@@ -60,7 +60,7 @@ class ApiController extends Controller
             foreach($posts as $post){
                 Post::create([
                 'id'=>$post['id'],
-                'userId'=>$post['userId'],
+                'user_id'=>$post['userId'],
                 'title'=>$post['title'],
                 'body'=>$post['body']
                 ]);
@@ -75,7 +75,7 @@ class ApiController extends Controller
             foreach($comments as $comment){
                 Comment::create([
                  'id'=>$comment['id'],
-                 'postId'=>$comment['postId'],
+                 'post_id'=>$comment['postId'],
                  'name'=>$comment['name'],
                  'email'=>$comment['email'],
                  'body'=>$comment['body']

@@ -27,7 +27,7 @@
                             <td style="color: greenyellow">{{$post->title}}</td>
                             <td>{{$post->body}}</td>
                             <td class="text-right">
-                            <a href="#" class="btn btn-sm btn-success">Details</a>
+                            <a href="{{ route('post.details', $post->id) }}" class="btn btn-sm btn-success">Details</a>
                         </td>
                         </tr>
                         @endforeach

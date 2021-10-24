@@ -51,7 +51,9 @@ class AdminController extends Controller
 
        $postComments = $post->comments;
 
-       dd($post, $postComments);
+       $userInfo = $post->user;
+
+       return view ('Admin.postDetails',['post'=>$post , 'postComments'=>$postComments,'userInfo'=>$userInfo]);
 
    }
 
